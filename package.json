@@ -1,0 +1,17 @@
+{
+  "name": "react-redux-gallery-example",
+  "version": "0.0.1",
+  "description": "Example gallery app made with React and Redux",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/icmx/react-redux-gallery-example.git"
+  },
+  "keywords": [],
+  "author": "icmx",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/icmx/react-redux-gallery-example/issues"
+  },
+  "homepage": "https://github.com/icmx/react-redux-gallery-example#readme"
+}
