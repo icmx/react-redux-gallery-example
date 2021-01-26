@@ -1,0 +1,78 @@
+:root {
+  --palette-blue-100: #1458eaff;
+  --palette-blue-200: #1458ea66;
+  --palette-blue-300: #1458ea22;
+  --palette-blue-400: #1458ea11;
+
+  --palette-gray-100: #222222;
+  --palette-gray-200: #eeeeee;
+
+  --palette-white-100: #ffffff;
+  --palette-white-200: #fcfcfc;
+
+  --palette-backdrop: #000000aa;
+
+  --box-shadow-selection: 0 0 0 5px var(--palette-blue-200);
+  --box-shadow-backdrop: inset 0 0 32px 8px var(--palette-backdrop);
+
+  --radius-100: 0.5rem;
+  --radius-200: 1rem;
+  --radius-circle: 50%;
+
+  --space-500: 3rem;
+  --space-400: 2rem;
+  --space-300: 1.5rem;
+  --space-200: 1rem;
+  --space-100: 0.5rem;
+}
+
+body {
+  font-family: 'system-ui', sans-serif;
+  font-size: 1.25rem;
+  font-weight: 400;
+
+  max-width: 60rem;
+  margin: 0 auto;
+
+  padding: var(--space-200);
+
+  color: var(--palette-gray-100);
+}
+
+h1 {
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+hr {
+  height: 1px;
+  margin: var(--space-300) 0;
+
+  background-color: var(--palette-gray-200);
+}
+
+.link {
+  color: var(--palette-blue-100);
+
+  transition: color 0.2s;
+}
+
+.link:hover {
+  color: var(--palette-blue-200);
+}
+
+.placeholder {
+  padding: var(--space-400) var(--space-200);
+  border-radius: var(--radius-100);
+
+  font-size: 2rem;
+  text-align: center;
+
+  color: #00000044;
+  background-color: #00000011;
+}

@@ -1,0 +1,9 @@
+.AlbumPage > h1 {
+  margin-bottom: var(--space-300);
+
+  text-transform: capitalize;
+}
+
+.AlbumPage > p {
+  margin-bottom: var(--space-200);
+}

@@ -1,0 +1,23 @@
+.AlbumCard {
+  display: block;
+
+  padding: var(--space-200);
+  border-radius: var(--radius-100);
+  border: solid 1px var(--palette-gray-200);
+
+  background-color: var(--palette-white-100);
+
+  transition: background-color 0.2s, box-shadow 0.2s, transform 0.2s;
+}
+
+.AlbumCard:hover {
+  background-color: var(--palette-white-200);
+  box-shadow: var(--box-shadow-selection);
+}
+
+.AlbumCard > h2 {
+  white-space: nowrap;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+  text-transform: capitalize;
+}

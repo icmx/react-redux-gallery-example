@@ -1,0 +1,18 @@
+.PhotoViewPage__content {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  min-height: 600px;
+
+  border-radius: var(--radius-100);
+  background-color: var(--palette-gray-100);
+  overflow: hidden;
+
+  margin-bottom: var(--space-200);
+}
+
+.PhotoViewPage > p {
+  margin-bottom: var(--space-200);
+}

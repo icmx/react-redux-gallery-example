@@ -1,0 +1,7 @@
+.HomePage > h1 {
+  margin-bottom: var(--space-300);
+}
+
+.HomePage > p {
+  margin-bottom: var(--space-200);
+}

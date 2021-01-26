@@ -1,0 +1,107 @@
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+
+  box-sizing: border-box;
+}
+
+/* gaps */
+
+.flex.g1 {
+  margin-left: -1rem;
+  margin-right: -1rem;
+
+  padding: 0.5rem;
+}
+
+.flex.g1 > .item {
+  padding: 0.5rem;
+}
+
+/* items per row -- globally, per flex */
+
+.flex.c1 > .item {
+  flex-basis: calc(100% / 1);
+  max-width: calc(100% / 1);
+}
+
+.flex.c2 > .item {
+  flex-basis: calc(100% / 2);
+  max-width: calc(100% / 2);
+}
+
+.flex.c4 > .item {
+  flex-basis: calc(100% / 4);
+  max-width: calc(100% / 4);
+}
+
+@media (min-width: 768px) {
+  .flex.c1\@d > .item {
+    flex-basis: calc(100% / 1);
+    max-width: calc(100% / 1);
+  }
+
+  .flex.c2\@d > .item {
+    flex-basis: calc(100% / 2);
+    max-width: calc(100% / 2);
+  }
+
+  .flex.c4\@d > .item {
+    flex-basis: calc(100% / 4);
+    max-width: calc(100% / 4);
+  }
+}
+
+/* override setting above, make a single item wider */
+
+.flex > .item.c1 {
+  flex-basis: calc(100% / 1);
+  max-width: calc(100% / 1);
+}
+
+.flex > .item.c2 {
+  flex-basis: calc(100% / 2);
+  max-width: calc(100% / 2);
+}
+
+.flex > .item.c4 {
+  flex-basis: calc(100% / 4);
+  max-width: calc(100% / 4);
+}
+
+@media (min-width: 768px) {
+  .flex > .item.c1\@d {
+    flex-basis: calc(100% / 1);
+    max-width: calc(100% / 1);
+  }
+
+  .flex > .item.c2\@d {
+    flex-basis: calc(100% / 2);
+    max-width: calc(100% / 2);
+  }
+
+  .flex > .item.c4\@d {
+    flex-basis: calc(100% / 4);
+    max-width: calc(100% / 4);
+  }
+}
+
+.flex > .item {
+  display: block;
+  box-sizing: border-box;
+  flex-grow: 1;
+
+  padding: 0.5rem;
+}
+
+.flex.square > .item:before,
+.flex > .item.square:before {
+  content: '';
+  float: left;
+  padding-top: 100%;
+}
+
+.flex > .item > * {
+  height: 100%;
+  box-sizing: border-box;
+}

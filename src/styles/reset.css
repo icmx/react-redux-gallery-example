@@ -1,0 +1,20 @@
+a {
+  text-decoration: none;
+  color: unset;
+
+  -webkit-tap-highlight-color: transparent;
+}
+
+h1,
+h2,
+p {
+  margin: 0;
+}
+
+hr {
+  border: none;
+}
+
+button {
+  -webkit-tap-highlight-color: transparent;
+}

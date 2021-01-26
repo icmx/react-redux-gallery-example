@@ -1,8 +1,12 @@
 {
   "name": "react-redux-gallery-example",
-  "version": "0.0.1",
-  "description": "Example gallery app made with React and Redux",
+  "version": "0.1.0",
   "private": true,
+  "description": "Example gallery app made with React and Redux",
+  "scripts": {
+    "serve": "webpack serve --config-name serve",
+    "build": "webpack --config-name build"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/icmx/react-redux-gallery-example.git"
@@ -13,5 +17,31 @@
   "bugs": {
     "url": "https://github.com/icmx/react-redux-gallery-example/issues"
   },
-  "homepage": "https://github.com/icmx/react-redux-gallery-example#readme"
+  "homepage": "https://github.com/icmx/react-redux-gallery-example#readme",
+  "devDependencies": {
+    "@babel/core": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
+    "@babel/preset-react": "^7.12.10",
+    "babel-loader": "^8.2.2",
+    "clean-webpack-plugin": "^3.0.0",
+    "copy-webpack-plugin": "^7.0.0",
+    "css-loader": "^5.0.1",
+    "html-webpack-plugin": "^5.0.0-beta.6",
+    "mini-css-extract-plugin": "^1.3.4",
+    "postcss-csso": "^5.0.0",
+    "postcss-loader": "^4.2.0",
+    "style-loader": "^2.0.0",
+    "webpack": "^5.17.0",
+    "webpack-cli": "^4.4.0",
+    "webpack-dev-server": "^3.11.2",
+    "webpack-merge": "^5.7.3"
+  },
+  "dependencies": {
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-redux": "^7.2.2",
+    "react-router-dom": "^5.2.0",
+    "redux": "^4.0.5",
+    "redux-thunk": "^2.3.0"
+  }
 }
