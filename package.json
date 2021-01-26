@@ -11,7 +11,12 @@
     "type": "git",
     "url": "git+https://github.com/icmx/react-redux-gallery-example.git"
   },
-  "keywords": [],
+  "keywords": [
+    "react",
+    "redux",
+    "example",
+    "no-cra"
+  ],
   "author": "icmx",
   "license": "MIT",
   "bugs": {
