@@ -1,4 +1,4 @@
-import { ENDPOINT } from './endpoint';
+import api from '../api';
 
 export const GET_ALBUM = 'GET_ALBUM';
 export const GET_ALBUM_SUCCESS = 'GET_ALBUM_SUCCESS';
@@ -22,13 +22,11 @@ export const fetchAlbum = (albumId) => async (dispatch) => {
   dispatch(getAlbum());
 
   try {
-    const result = await fetch(
-      `${ENDPOINT}/albums/${albumId}?_expand=user&_embed=photos`
+    const result = await api.get(
+      `/albums/${albumId}?_expand=user&_embed=photos`
     );
 
-    const data = await result.json();
-
-    dispatch(getAlbumSuccess(data));
+    dispatch(getAlbumSuccess(result.data));
   } catch (error) {
     dispatch(getAlbumFailure());
   }

@@ -1,4 +1,4 @@
-import { ENDPOINT } from './endpoint';
+import api from '../api';
 
 export const GET_PHOTO = 'GET_PHOTO';
 export const GET_PHOTO_SUCCESS = 'GET_PHOTO_SUCCESS';
@@ -21,11 +21,9 @@ export const fetchPhoto = (photoId) => async (dispatch) => {
   dispatch(getPhoto());
 
   try {
-    const result = await fetch(`${ENDPOINT}/photos/${photoId}`);
+    const result = await api.get(`/photos/${photoId}`);
 
-    const data = await result.json();
-
-    dispatch(getPhotoSuccess(data));
+    dispatch(getPhotoSuccess(result.data));
   } catch (error) {
     dispatch(getPhotoFailure());
   }

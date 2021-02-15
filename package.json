@@ -1,6 +1,6 @@
 {
   "name": "react-redux-gallery-example",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": true,
   "description": "Example gallery app made with React and Redux",
   "scripts": {
@@ -42,6 +42,7 @@
     "webpack-merge": "^5.7.3"
   },
   "dependencies": {
+    "axios": "^0.21.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-redux": "^7.2.2",
