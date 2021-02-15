@@ -11,6 +11,7 @@ Data is taken from [JSONPlaceholder](https://jsonplaceholder.typicode.com) API:
 ## Features
 
   - React & Redux + Thunk, nuff said.
+  - Axios as HTTP client
   - No create-react-app scripts, just plain Webpack 5 bundling and live development
   - *Gallery*, i.e. list of albums with photos inside
     - Small preview photos in album and large full-size photos in modal
