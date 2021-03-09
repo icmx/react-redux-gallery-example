@@ -118,7 +118,7 @@ const serveConfig = merge(baseConfig, {
     historyApiFallback: true,
     contentBase: baseConfig.externals.paths.dist,
     host: '0.0.0.0',
-    port: 3600,
+    port: 8000,
     overlay: {
       warnings: true,
       errors: true,
